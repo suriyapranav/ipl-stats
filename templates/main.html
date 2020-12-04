@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+	
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+	<title>
+		SPR's IPL STATS
+	</title>
+
+<style>
+	@media (min-width:481px){
+
+		#myUL {
+		  
+		  list-style-type: none;
+		  padding: 0;
+		  margin: 0;
+		}
+
+		#myUL li a {
+		  border: 1px solid #ddd; 
+		  margin-top: -1px; 
+		  background-color: #f6f6f6; 
+		  padding: 12px; 
+		  text-decoration: none; 
+		  font-size: 18px; 
+		  color: black; 
+		  display: block; 
+		}
+
+		#myUL li a:hover:not(.header) {
+		  background-color: #eee; 
+		}
+
+		#display{
+			margin: auto;
+			  font-size: 18px;
+			  padding: 10px;
+			  text-align: center;
+			  top:90%;
+			
+			
+		}
+
+		#myInput {
+		  background-image: url('/static/search2.png'); 
+		  background-position: 0px 0px; 
+		  background-size: 40px 40px;
+		  background-repeat: no-repeat; 
+		  width: 80%; 
+		  font-size: 16px; 
+		  padding: 12px 20px 12px 40px; 
+		  border: 1px solid #ddd; 
+		  margin-bottom: 12px; 
+		}
+
+		#myUL2 {
+		  
+		  list-style-type: none;
+		  padding: 0;
+		  margin: 0;
+		}
+
+		#myUL2 li a {
+		  border: 1px solid #ddd; 
+		  margin-top: -1px; 
+		  background-color: #f6f6f6; 
+		  padding: 12px; 
+		  text-decoration: none; 
+		  font-size: 18px; 
+		  color: black; 
+		  display: block; 
+		}
+
+		#myUL2 li a:hover:not(.header) {
+		  background-color: #eee; 
+		}
+
+		#myInput2 {
+		  background-image: url('/static/search2.png'); 
+		  background-position: 0px 0px; 
+		  background-size: 40px 40px;
+		  background-repeat: no-repeat; 
+		  width: 80%; 
+		  font-size: 16px; 
+		  padding: 12px 20px 12px 40px; 
+		  border: 1px solid #ddd; 
+		  margin-bottom: 12px; 
+		}
+
+		#top{
+			margin: auto;
+			  width: 96%;
+			  padding: 20px;
+			  text-align: center;
+			  background-color:#33ab6f;
+			  font-family: 'Poppins';
+
+			  background-image: url('/static/IPLLogo.jpeg'); 
+			  background-position: 0px 0px;  
+		  background-size: 200px 100px;
+		  background-repeat: no-repeat;
+			  
+		}
+
+		#bat{
+			margin:auto;
+			  
+			 text-align: center;
+		}
+
+		#bowl
+		{
+			margin:auto;
+			text-align: center;
+			
+
+		}
+				img {
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+	}
+
+	@media (min-width:1281px){
+
+		#myUL {
+		  
+		  list-style-type: none;
+		  padding: 0;
+		  margin: 0;
+		}
+
+		#myUL li a {
+		  border: 1px solid #ddd; 
+		  margin-top: -1px; 
+		  background-color: #f6f6f6; 
+		  padding: 12px; 
+		  text-decoration: none; 
+		  font-size: 18px; 
+		  color: black; 
+		  display: block; 
+		}
+
+		#myUL li a:hover:not(.header) {
+		  background-color: #eee; 
+		}
+
+		#display{
+			margin: auto;
+			  font-size: 18px;
+			  padding: 10px;
+			  text-align: center;
+			  font-size: 20px;
+			
+			
+		}
+
+		#myInput {
+		  background-image: url('/static/search2.png'); 
+		  background-position: 0px 0px; 
+		  background-size: 40px 40px;
+		  background-repeat: no-repeat; 
+		  width: 80%; 
+		  font-size: 16px; 
+		  padding: 12px 20px 12px 40px; 
+		  border: 1px solid #ddd; 
+		  margin-bottom: 12px; 
+		}
+
+		#myUL2 {
+		  
+		  list-style-type: none;
+		  padding: 0;
+		  margin: 0;
+		}
+
+		#myUL2 li a {
+		  border: 1px solid #ddd; 
+		  margin-top: -1px; 
+		  background-color: #f6f6f6; 
+		  padding: 12px; 
+		  text-decoration: none; 
+		  font-size: 18px; 
+		  color: black; 
+		  display: block; 
+		}
+
+		#myUL2 li a:hover:not(.header) {
+		  background-color: #eee; 
+		}
+
+		#myInput2 {
+		  background-image: url('/static/search2.png'); 
+		  background-position: 0px 0px; 
+		  background-size: 40px 40px;
+		  background-repeat: no-repeat; 
+		  width: 80%; 
+		  font-size: 16px; 
+		  padding: 12px 20px 12px 40px; 
+		  border: 1px solid #ddd; 
+		  margin-bottom: 12px; 
+		}
+
+		#top{
+			margin: auto;
+			  width: 96%;
+			  padding: 20px;
+			  text-align: center;
+			  background-color:#33ab6f;
+			 
+		  background-image: url('/static/IPLLogo.jpeg'); 
+			  background-position: 250px 10px;  
+		  background-size: 200px 100px;
+		  background-repeat: no-repeat;
+		}
+
+		#bat{
+			margin:auto;
+			 position:absolute; left:3%; top:14%; 
+			 text-align: center;
+		}
+
+		#bowl
+		{
+
+			position:absolute; left:70%; top:14%;
+			text-align: center;
+			padding:1px;
+
+		}
+				img {
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+	}
+
+	
+</style>
+
+</head>
+
+
+<body style="background-color:#d7f7e7;font-family: 'Poppins';">
+
+	
+	<div id="top">
+		<h1>BATSMAN vs BOWLER STATS</h1>
+		<h3> Till IPL 2020</h3>
+		<h7>ⓒSPRSWAGBOT</h7> 
+	</div>
+
+	
+	
+	<form method="POST" name="myForm">
+
+
+		<div id= 'bat'>
+			<h3> BATSMAN </h3>
+
+		        	<input type="text" value='{{data.bat}}' name="bat" id="myInput" onkeyup="myFunction()" placeholder="Enter only the Last Name of BATSMAN" size="40">
+
+		    <ul id='myUL'>
+		      
+		        {% for p in batsmen %}
+		          <li class='ex1' style="display:none;"><a href="#" onclick="set_text(this)";>{{ p }}</a></li>
+		        {% endfor %}
+		    </ul>
+
+
+		  {% if data.pic1!='' %}
+		   <img src= {{ data.pic1}} width="350" height="350" alt="User Image">
+		  {%endif %}
+		 
+
+	</div>
+
+
+	<div id= 'bowl'>
+		<h3> BOWLER </h3>
+
+			<input type="text" value='{{data.bow}}' name="bowl" id="myInput2" onkeyup="myFunction2()" placeholder="Enter only the Last Name of BOWLER" size="40">
+
+
+
+		    <ul id='myUL2'>
+
+		        {% for p in bowlers %}
+		          <li class='ex1' style="display:none;" ><a href="#" onclick="set_text2(this)";>{{ p }}</a></li>
+		        {% endfor %}
+		    </ul>
+
+		  {% if data.pic2!='' %}
+		  <img src= {{ data.pic2}} width="350" height="350" alt="User Image">
+		  {%endif %}
+
+	</div>
+
+	</form>
+
+
+	<div id="display" >
+
+		{% if data.show==True%}
+<pre><h2 style="text-align: center;">{{ data.bat }} vs {{ data.bow }}</h2></pre>
+
+Matches  : {{data.mat}}<br>
+  Runs     : {{data.runs}}<br> 
+Balls    : {{data.ball}}<br>
+Wickets  : {{data.wik}}
+
+<h3>First Innings </h3>
+ Runs     : {{data.frun}}<br>
+Balls    : {{data.fball}}<br>
+Wickets  : {{data.fwik}}<br>
+Fours    : {{data.f4}}<br>
+Six      : {{data.f6}}
+<h3>Second Innings </h3>
+ Runs     : {{data.srun}}<br> 
+Balls    : {{data.sball}}<br>
+Wickets  : {{data.swik}}<br>
+Fours    : {{data.s4}}<br>
+ Six      : {{data.s6}} <br>
+
+		
+			
+
+		{% endif %}
+
+	</div>
+
+
+
+	    <script>
+
+	        function myFunction() {
+
+	          var input, filter, ul, li, a, i, txtValue;
+	          input = document.getElementById('myInput');
+	          filter = input.value.toUpperCase();
+	          ul = document.getElementById("myUL");
+	          li = ul.getElementsByTagName('li');
+	        
+
+
+	          for (i = 0; i < li.length; i++) {
+	            a = li[i].getElementsByTagName("a")[0];
+	            txtValue = a.textContent || a.innerText;
+	            if (txtValue.toUpperCase().indexOf(filter) > -1 && filter.length>1 ) {
+
+	              li[i].style.display = "";
+	             
+	            }
+	             
+	            else {
+	              li[i].style.display = "none";
+	            }
+
+
+	          }
+	        }
+
+	  </script>
+
+	  <script>
+
+	      function set_text(name)
+	      {
+	        document.getElementById("myInput").value = (name.textContent).replace('<', '');
+	        document.forms["myForm"].submit();
+	        
+
+	      }
+
+	  </script>
+
+
+	<script>
+
+		        function myFunction2() {
+
+		          var input, filter, ul, li, a, i, txtValue;
+		          input = document.getElementById('myInput2');
+		          filter = input.value.toUpperCase();
+		          ul = document.getElementById("myUL2");
+		          li = ul.getElementsByTagName('li');
+
+
+		          for (i = 0; i < li.length; i++) {
+		            a = li[i].getElementsByTagName("a")[0];
+		            txtValue = a.textContent || a.innerText;
+		            if (txtValue.toUpperCase().indexOf(filter) > -1 && filter.length>2) {
+
+		              li[i].style.display = "";
+		             
+		            }
+		             
+		            else {
+		              li[i].style.display = "none";
+		            }
+
+		            if(filter=='')
+		              li[i].style.display = "none";
+
+
+		          }
+		        }
+
+		  </script>
+
+		  <script>
+
+		      function set_text2(name)
+		      {
+		        document.getElementById("myInput2").value = (name.textContent).replace('<', '');
+		        document.forms["myForm"].submit();
+		      }
+
+		  </script>
+
+
+
+</body>
+</html>
