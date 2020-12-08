@@ -36,9 +36,34 @@ bowlers=['AM Nayar', 'Mustafizur Rahman', 'Z Khan', 'SK Warne', 'BA Bhatt', 'SN 
 
 @app.route("/")
 
-
 def home():
+	reset()
 	return render_template('main.html',data=data,batsmen=batsmen,bowlers=bowlers)
+
+def reset():
+	data.pic1=''
+	data.pic2=''
+
+
+	data.bat=''
+	data.bow=''
+
+	data.runs=0
+	data.frun=0
+	data.srun=0
+	data.f4=0
+	data.f6=0
+	data.s4=0
+	data.s6=0
+	data.wik=0
+	data.fwik=0
+	data.swik=0
+	data.ball=0
+	data.fball=0
+	data.sball=0
+	data.mat=0
+
+	data.show=False
 
 
 @app.route("/", methods=['POST'])
@@ -75,7 +100,8 @@ def get_data():
 			data.show=True
 			calculate()
 
-	return redirect(url_for("home"))
+	#return redirect(url_for("home"))
+	return render_template('main.html',data=data,batsmen=batsmen,bowlers=bowlers)
 
 def calculate():
 
@@ -135,7 +161,7 @@ def calculate():
 	                data.fwik+=1
 	            else:
 	                data.swik+=1
-	               
+
 
 def reset():
 	data.pic1=''
@@ -161,9 +187,12 @@ def reset():
 	data.mat=0
 
 	data.show=False
+
+	               
+
 	
 if __name__ == '__main__':
-    # Bind to PORT if defined, otherwise default to 5000.
+    
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
 
